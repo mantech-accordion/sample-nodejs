@@ -11,7 +11,7 @@ const app = express();
 app.get('/', (req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
-  res.send('<Nodejs on Accordion>\n');
+  res.send('<h1>Nodejs on Accordion</h1>\n');
 });
 
 app.listen(PORT, HOST);
