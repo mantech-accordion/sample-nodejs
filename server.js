@@ -9,7 +9,9 @@ const HOST = '0.0.0.0';
 // App
 const app = express();
 app.get('/', (req, res) => {
-  res.send('<Hello world - Accordion Nodejs>\n');
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.send('<Nodejs on Accordion>\n');
 });
 
 app.listen(PORT, HOST);
