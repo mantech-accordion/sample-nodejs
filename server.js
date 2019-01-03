@@ -2,14 +2,14 @@
 
 const express = require('express');
 
-// 상수
+// Constant
 const PORT = 8080;
 const HOST = '0.0.0.0';
 
-// 앱
+// App
 const app = express();
 app.get('/', (req, res) => {
-  res.send('Hello world\n');
+  res.send('<Hello world - Accordion Nodejs>\n');
 });
 
 app.listen(PORT, HOST);
