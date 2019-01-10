@@ -14,5 +14,13 @@ app.get('/', (req, res) => {
   res.send('Run nodejs on Accordion.\n');
 });
 
+app.get('/helloword', (req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.send('Helloworld.\n');
+});
+
+
+
 app.listen(PORT, HOST);
 console.log(`Running on http://${HOST}:${PORT}`);
