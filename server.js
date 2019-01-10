@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
   res.send('Run nodejs on Accordion.\n');
 });
 
-app.get('/helloword', (req, res) => {
+app.get('/helloworld', (req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
   res.send('Helloworld.\n');
